@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Research Hub</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #fafafa; color: #1a1a1a; min-height: 100vh; }
+
+  .header { background: #fff; border-bottom: 1px solid #e5e5e5; padding: 40px 24px 35px; text-align: center; }
+  .header h1 { font-size: 2.2em; font-weight: 800; letter-spacing: -1px; color: #1a1a1a; }
+  .header p { color: #777; font-size: 1em; margin-top: 8px; }
+
+  .container { max-width: 800px; margin: 0 auto; padding: 30px 24px 60px; }
+
+  .report-card {
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    border-radius: 14px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    transition: box-shadow 0.2s, transform 0.15s;
+    text-decoration: none;
+    display: block;
+    color: inherit;
+  }
+  .report-card:hover {
+    box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+    transform: translateY(-2px);
+    border-color: #ccc;
+  }
+
+  .report-card .card-image {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+  }
+
+  .report-card .card-body { padding: 22px 24px; }
+
+  .report-card .card-tag {
+    display: inline-block;
+    font-size: 0.72em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    padding: 4px 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  .tag-research { background: #e3f2fd; color: #1565c0; }
+  .tag-comparison { background: #e8f5e9; color: #2e7d32; }
+  .tag-guide { background: #fff3e0; color: #e65100; }
+  .tag-analysis { background: #f3e5f5; color: #7b1fa2; }
+
+  .report-card .card-title {
+    font-size: 1.3em;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 8px;
+    line-height: 1.3;
+  }
+
+  .report-card .card-desc {
+    font-size: 0.92em;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 12px;
+  }
+
+  .report-card .card-meta {
+    font-size: 0.8em;
+    color: #999;
+    display: flex;
+    gap: 16px;
+  }
+
+  .empty-state {
+    text-align: center;
+    padding: 60px 20px;
+    color: #bbb;
+  }
+  .empty-state .icon { font-size: 3em; margin-bottom: 15px; }
+  .empty-state p { font-size: 0.95em; }
+
+  .footer {
+    text-align: center;
+    padding: 30px;
+    color: #ccc;
+    font-size: 0.8em;
+  }
+
+  @media (max-width: 600px) {
+    .header h1 { font-size: 1.7em; }
+    .report-card .card-image { height: 160px; }
+    .report-card .card-title { font-size: 1.15em; }
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>📋 Research Hub</h1>
+  <p>Reports, comparisons, and research pages</p>
+</div>
+
+<div class="container">
+
+  <!-- Report 1: Escalade -->
+  <a href="https://ryank33.github.io/escalade-report/" class="report-card">
+    <img class="card-image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/2025_Cadillac_Escalade_IQ_%28cropped%29.jpg/1280px-2025_Cadillac_Escalade_IQ_%28cropped%29.jpg" alt="Cadillac Escalade IQ">
+    <div class="card-body">
+      <span class="card-tag tag-comparison">Comparison</span>
+      <div class="card-title">Cadillac Escalade: Gas V8 vs Electric IQ</div>
+      <div class="card-desc">Complete research report comparing the gas-powered Escalade (6.2L V8, 420–682 hp) with the all-electric Escalade IQ (750 hp, 460+ mile range). Includes pricing, specs, 24 YouTube reviews, Orange County dealer inventory, and test drive guide.</div>
+      <div class="card-meta">
+        <span>📅 February 2026</span>
+        <span>🏷️ Automotive</span>
+        <span>📊 2025/2026 Models</span>
+      </div>
+    </div>
+  </a>
+
+  <!-- Placeholder for future reports -->
+  <div class="empty-state">
+    <div class="icon">🚀</div>
+    <p>More reports coming soon</p>
+  </div>
+
+</div>
+
+<div class="footer">
+  Built with Atlas 🌍
+</div>
+
+</body>
+</html>
